@@ -1,0 +1,339 @@
+QUALCOMM :
+
+1. Explain about the Last project which i have done (what is my role) ?
+
+2. what are different IPC mechanisms are there and explain All?
+
+3. what is TIPC (Transperant IPC) related to vxWorks ?
+
+4. Write a program Finding a sub String in a String ?
+
+5. Write a program Reverse a single Linked list in a optimized way?
+
+6. What is critical section ?
+
+7. 5 lines of code should execute without any interruption , how?
+
+8. Bit toggling ?
+
+1)Interrupt handling in linux?Suppose if an interrupt came who will take care of push pc and jump to irq subroutine.
+
+2)What is cache?L1,L2? If you want to allocate cache in a device driver how will you do it?
+
+3)Write a linked list for a push and pop?
+
+4)USB Device enumeration?What is an OTG?
+
+5)What is the difference between Von Numen and Harward ?Which is the best &why?
+
+6)MMU ?How logical address is converted into physical ?Why MMU came into picture?
+
+7)Explain the steps involved in .c to .o?
+
+8)Trace 32 Debugging method? gdb? Kgb?
+
+9)Storage classes?const ?What is run time error,Compile time error,linker error?How many
+ segments are present and what are they? for vs while?
+
+10)Difference between global and local ?
+
+11)u-boot ,bootloader basics ?why a bootloader is required? what is the concept of secondary bootloader ?Can a kernel can boot without a bootloader?
+
+12)What is the difference between SDRAM and DDRAM?
+
+13)volatile a real time example ?compiler knowledge?const ?can we overrite a value to a const ?
+
+14)In 1 line write a C programm to toggle a bit from 1 to 0 or 0 to 1?
+
+15).void func(char *str)
+{
+char *tmp="Hello World";
+for(int i=0;i<strlen(t);i++)
+str[i]=t[i];
+} what are the value of str ? if i repalce str by *str what is the value?
+
+16).Count number of 1 s without loops?
+
+17).reverse linked list for sll using single pointer only?
+
+18).0XAEFECEBE represent in BEndian and LEndian ?
+
+19)Threads question 4 threads are accessing a func passing 2 parameters ts and value,write the func in a way it should update in a 2 dmensional array?
+
+20)structure padding ?
+
+
+1) How static variable is not able to access from another file
+2) Implement strstr function
+3) Implement a char driver , pass data from user space to kernel
+4) SPI diff of UART and SPI
+5) Interrupts  how it will process, what will happen
+6) Tasklet, softIRQ, workque
+
+
+1. Find number is divisible by 4, two methods 
+2. Access static variable of file 1 in file 1, two methods
+3. Where each data is mapped, like static, automatic, global
+4. Constant, pointers
+5. Semaphore, mutex
+6. Asynchronous, synchronous functions
+7. Link list write a program, write 
+8. How to find size of int
+9. Count number of 1s  
+10. What is constant pointer, pointer to constant
+
+1) Operating system questions, where is heap and stack in OS
+2) How heap and OS grow
+3) Any change in corrupting stack and heap each other , and how it can be handled
+4) Process synchronization,
+5) Semaphore, mutex, 
+6) Priority inversion, priority inheritance
+7) Priority sealing
+8) What is Deal lock, deal lock avoidance algorithm
+9) How OS takes care of dead lock
+10) Deferred interrupt how do u do ?
+
+
+1) Diff between static and volatile
+2) Union , how it is useful
+3) Function pointer
+4) Constant keyword
+5) While allocation of dynamic memory, how do you memory leakage
+6) Bit field accessing in structure
+7) Structure padding
+8) How malloc is implemented
+9) Spin lock, semaphore, mutex
+10) Cache memory
+
+
+1) Memory Organisation when program runs, why ?
+2) Why heap and stack in opposite direction
+3) Stack overflow who will we identify and who will alarm
+4) If you are writing 64k as program, how do u allocate text segment
+5) Data segment in initialized and uninitialized, why ?
+
+
+1. How to avoid deadlock, OS or program has to take care
+2. How to avoid collision in Wi-Fi Beacons
+
+
+WIND RIVER :
+
+
+1. Differences between RTOS (vxworks) and Linux (GPOS) ?
+2. Copy_from_user() usage in linux , why not memcpy() ?
+3. what is the ifference between a system call and normal call ? (open and fopen) 
+4. PCI enumeration ?
+5. what is BSP ?
+6. what are the different types of vxWorks Images ?
+7. IDE and command line familiarity ?
+8. Priority Inversion ?
+9. how many priorities are there in Vxworks ?
+10. which task (initial task) is initialized when vxWorks OS comes up ?
+11.doesl vxworks-5.4 has X86 BSP supported ?
+12. strcpy() implementation and optimization ?
+13. Single LL add and delete functions ?
+14. Differences between Array and pointers ?
+15. what is implicit declaration error while compilation ?
+16. Memory segments of Application ?
+17. Scheduler in RTOS ?
+18. Compiler used in vxworks-5.4 ?
+19. How to create and run a Task?
+20. what is MSI (interrupt)
+
+
+
+
+
+
+
+
+
+
+
+RADISYS :
+
+
+Pl pepare on C/Data structures/ Linux OS concents/ IPCs. Below are some guideline questions.
+
+C / Linux system programming Questions:
+
+6. Design an algo for the following
+input queue = 2,4,6,5,1,9,8,7,3
+two threads, one is even and the other is odd. 
+Even thread should read even values and odd thread should read odd values and print them in the same order as the input queue.
+7. What is memory leak, and how can you find a memory leak without using a tool in linux environment.
+8. How to debug core dump?
+9. How to find the address of a data type in a structure variable?
+10. Write a program to insert a node from linked list?
+
+struct s
+{
+char a;
+int b;
+}o;
+sizeof(o);
+why padding is required ? where it will be ?
+memory alignment
+struct s
+{
+char a;
+int b;
+char hh;
+}o;
+sizeof(o);
+Registers - memory layout
+doubly linklist deletion of node:
+check no of bits set in char.. 
+little endian big endian
+socket , bind and connect
+raw socket
+static dynamic library , what is libpthread static / 
+conditional compilation
+make file, how to give flag at compile time -DTILE / for undefine 
+what is hash table ?, data structure used for implementation of hash table
+
+1. Memory Layout of a Process (Text segment, DS segment, BSS segment, Stack, Heap).
+2. Static and local variable(Differences).
+3. Redefinition for a global variable(Error scenarios)
+example:
+a.c
+int i=10; // global
+b.c
+int i = 8; // global
+compiled to a.o and b.o, will through error while linking(type of error and why and how can we avoid the same).
+
+4. Difference between process and thread(why thread is called light weight process).
+5. Thread is having only it's own stack whereas text and data segment it will share of the parent process.
+6. Binary semaphore and mutex(are they same?).
+7. Delete a node from Link List(keeping all the 3 conditions in mind[delete first, last and middle]).
+8. int value = 0x01020304; swap the 1st and 3rd byte
+we can type cast with a char type pointer to store the bytes and than some string operation can be done to swap, there could be other ways too.
+9. Sockets system calls
+ socket, bind, listen, select .
+ Do we need to provide the IP of server for socket creation in server.
+ accept as blocking call, can it be made NON_BLOCKING.
+
+10. Ping protocol(ICMP packets will be visible in Wireshark and what are the other fields and loop back address) 11. How can we debug a core dumps and how core dumps are getting generated in linux(it was not about the compile time flag, more of about the mechanism[may be the memory image of the call stack generations]).
+
+New set of questions:
+=================
+4. Difference b/w little endian and big endian system?
+5. Write a program to convert little endian to big endian and explain the program
+7. If two processors are given, one is little endian and other is big endian, what are the conversion required from little endian to big endian at user level. Also relate it to socket programming( client server model)
+8. How to pass information from user space to kernel space? How user will talk to kernel?
+9. How to pass information of IP address and port number to kernel space?
+10. Is It possible to access pointer in user space from kernel space? If yes then how?
+11. Given a diagram for networking application and asked about ping command. Also asked about different combination of L2/L3 w.r.t this application for source and destination.
+12. What Is the difference between process and thread?
+13. Different partitions of memory.
+14. For thread,which are of memory is shared?
+15. What Is the difference between binary semaphore and mutex?
+16.an application where two pointers are given and asked comparison about scenario where lock will be released and when will it occupy?
+17. write a program to free one particular node from given single link list.
+
+
+1. How VFS (Virtual File System) works in linux ?
+2. paging, page tables, and paging related questions ?
+3. Difference between static and Dynamic Libraries ?
+4. ISR mechanism in Multicore processors ? ---> using spinlocks 
+5. IPC mechanisms (Shared momory, message queues) ?
+6. Difference between semaphore and mutex ?
+7. about pthread library ?
+8. Big endian and little endian identification and conversion program ?
+9. IP address print for Big ensian and Little Endian machines ?
+10. Shared library usage with LD command ?
+11. finding a loop in SLL ?
+12. string and array accessing using pointers ?
+13. Difference between strlen() and sizeof() ?
+14. Difference between static function() and normal function() ?
+15. return value of strcpy() ?
+16. Read , Write sybchronization between 3 threads ?
+17. about memory leaks ?
+
+
+
+
+MOTOROLA :
+
+
+1. what is virtual memory ?
+2. kmalloc() and vmalloc() ?
+3. what is cache memory ?
+4. where cache memory is not required ?
+5. what is page table ?
+6. can DMA uses vmalloc() ?
+
+1. How you increase the RAM size in your board with related configuration?
+2. what is the command sequence to read i2c slave register content?
+3. What is multiplexing in GPIO pins and explain configuration steps involved ?
+4. System Boot process(major modules involved)
+5. write a function to find sub string in a string
+6. How many partitions in android filesystem
+7. How the images are writing into flash memory ( Explain the processes involved in target board)
+8. Functionality of Git blame command (Basic commands used in git)
+9. How can you debug?á kernel without gdb (Jtag)
+10. Knowledge in PCB schematics ?
+11. what kind of libc library android uses (Bionic) 
+12. How?á can you access All(128) internal register content in i2c slave device ?
+13. What is bottom half and its classification?(tasklet, work-queue, softirq)
+14. Difference between Tasklet and work-queue ?
+
+
+1. SPI vs I2C : Pretty much everything in detail at hardware level like frequency, impedance, speed, latency, reliability, pros & cons etc.
+2. What kind of work on I2C, SPI ?
+3. C Programming : Storage Classes in detail, Volatile keyword, what variable gets stored in which memory.
+What is the side effect when u modify a global variable inside a local function ?
+4. Synchronization and mutex issues in linux kernel development.
+
+
+RENESAS :
+
+
+1. what is a platform driver ?
+2. what is a function pointer ?
+3. Can we allocate memory for or in function pointer ?
+4. where fp will be stored ? heap...stack
+5. Active Low means ....interrupt is there or not ?
+6. how to handle a?á interrupt and reception of data ?
+7. do you know I2C protocol ?
+
+
+
+INTERMAC :
+
+1) write a program to find your machine is 32bit or 64 bit?
+2) write a program to reverse the single linked list using iteration ?
+3) write a program to find your machine is little endian or big endian?
+4) go through the concept of bit fields usage in structure
+5) questions on previous projects. for me on device drivers
+6) go through the interrupts concept
+7) Difference between mutex and semaphore
+8) say which of the following or true or false
+i) *p/*q
+ii)*p-*q
+iii) *p x*q
+iv) *p+*q
+v)p/q
+vi) p+q
+vii) p-q
+viii)p*q
+
+9) say the output of the following program
+char *s="hello"
+s[o]="H"
+printf("%s",s);
+
+10) what will be the output of the following program 
+
+int a[2][2][2]={1,3,2,5,6,8,3,5}
+
+printf("%d",a[1][0][2]);
+
+11) write a program to reverse the single linked list using recursion ?
+
+
+TI (Texas Instruments) :
+
+1. write a program to find even parity or odd parity in a character ?
+2. Big endian to Little endian conversion program ?
